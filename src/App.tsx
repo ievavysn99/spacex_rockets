@@ -1,7 +1,14 @@
 import './App.css';
+import TitleSearchBar from './components/molecules/TitleSearchBar';
+import Table from './components/molecules/Table';
 
 function App() {
-  return <>Hello World</>;
+  return (
+    <>
+      <TitleSearchBar></TitleSearchBar>
+      <Table></Table>
+    </>
+  );
 }
 
 export default App;
