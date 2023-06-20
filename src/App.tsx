@@ -1,13 +1,7 @@
-import TitleSearchBar from './components/molecules/TitleSearchBar';
-import Table from './components/molecules/Table';
+import Index from './components/pages/Index.tsx/Index';
 
 function App() {
-  return (
-    <>
-      <TitleSearchBar></TitleSearchBar>
-      <Table></Table>
-    </>
-  );
+  return <Index></Index>;
 }
 
 export default App;
