@@ -1,14 +1,7 @@
-import './App.css';
-import TitleSearchBar from './components/molecules/TitleSearchBar';
-import Table from './components/molecules/Table';
+import Index from './components/pages/Index/Index';
 
 function App() {
-  return (
-    <>
-      <TitleSearchBar></TitleSearchBar>
-      <Table></Table>
-    </>
-  );
+  return <Index></Index>;
 }
 
 export default App;

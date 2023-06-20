@@ -1,14 +1,15 @@
-import Title from '../../atoms/Title';
 import ResultCounter from '../../atoms/ResultCounter';
 import SearchInput from '../../atoms/SearchInput';
+import Title from '../../atoms/Title';
+import { StyledContainer } from './style';
 
-const TitleSearchBar = () => {
+const TitleSearchBar = ({ count, onSearchChange }: any) => {
   return (
-    <div>
+    <StyledContainer>
       <Title></Title>
-      <ResultCounter></ResultCounter>
-      <SearchInput></SearchInput>
-    </div>
+      <ResultCounter count={count} />
+      <SearchInput onChange={onSearchChange} />
+    </StyledContainer>
   );
 };
 

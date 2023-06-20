@@ -1,5 +1,5 @@
-const ResultCounter = () => {
-  return <div>ResultCounter</div>;
+const ResultCounter = ({ count }: any) => {
+  return <div>Results: {count}</div>;
 };
 
 export default ResultCounter;
