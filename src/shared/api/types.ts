@@ -3,7 +3,7 @@ export interface IRocket {
   rocket_id?: string;
   rocket_name: string;
   diameter: {
-    meters?: number;
+    meters: number;
     feet?: number;
   };
   height: {

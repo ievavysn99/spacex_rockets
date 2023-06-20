@@ -1,4 +1,4 @@
-import Index from './components/pages/Index.tsx/Index';
+import Index from './components/pages/Index/Index';
 
 function App() {
   return <Index></Index>;
