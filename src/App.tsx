@@ -1,4 +1,3 @@
-import './App.css';
 import TitleSearchBar from './components/molecules/TitleSearchBar';
 import Table from './components/molecules/Table';
 

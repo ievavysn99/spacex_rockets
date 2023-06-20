@@ -5,7 +5,7 @@ const Table = () => {
   return (
     <div>
       <TableHeading></TableHeading>
-      <TableRow></TableRow>
+      <TableRow rockets={[]}></TableRow>
     </div>
   );
 };
