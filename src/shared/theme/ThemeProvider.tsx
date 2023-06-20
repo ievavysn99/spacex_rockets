@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { ThemeProvider as StyledComponentsThemeProvider } from 'styled-components';
+
 const theme = {
   palette: {
     background: {

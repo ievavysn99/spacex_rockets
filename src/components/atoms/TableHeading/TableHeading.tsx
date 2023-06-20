@@ -1,14 +1,14 @@
+import { StyledHeading } from './style';
+
 const TableHeading = () => {
   return (
-    <thead>
-      <tr>
-        <th>Rocket Name</th>
-        <th>Diameter</th>
-        <th>Height</th>
-        <th>Mass</th>
-        <th>Cost Per Launch</th>
-      </tr>
-    </thead>
+    <StyledHeading>
+      <div>Rocket Name</div>
+      <div>Diameter</div>
+      <div>Height</div>
+      <div>Mass</div>
+      <div>Cost Per Launch</div>
+    </StyledHeading>
   );
 };
 

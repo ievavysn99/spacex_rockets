@@ -1,4 +1,5 @@
 import { IRocket } from '../../../shared/api/types';
+import { StyledRow } from './style';
 
 interface TableRowProps {
   rocket: IRocket;
@@ -14,13 +15,13 @@ const TableRow: React.FC<TableRowProps> = ({ rocket }) => {
   }
 
   return (
-    <tr>
-      <td>{rocket.rocket_name}</td>
-      <td>{rocket.diameter.meters} m</td>
-      <td>{rocket.height.meters} m</td>
-      <td>{rocket.mass.kg} kg</td>
-      <td>${rocket.cost_per_launch}</td>
-    </tr>
+    <StyledRow>
+      <div>{rocket.rocket_name}</div>
+      <div>{rocket.diameter.meters} m</div>
+      <div>{rocket.height.meters} m</div>
+      <div>{rocket.mass.kg} kg</div>
+      <div>${rocket.cost_per_launch}</div>
+    </StyledRow>
   );
 };
 
