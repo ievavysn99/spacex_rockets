@@ -11,11 +11,11 @@ const Table = ({ rockets }: TableProps) => {
   return (
     <StyledTable>
       <TableHeading />
-      <tbody>
+      <div>
         {rockets.map((rocket) => (
           <TableRow rocket={rocket} key={rocket.rocket_id} />
         ))}
-      </tbody>
+      </div>
     </StyledTable>
   );
 };
