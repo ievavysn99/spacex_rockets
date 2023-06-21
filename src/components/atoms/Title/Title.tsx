@@ -1,5 +1,7 @@
+import { StyledTitle } from './style';
+
 const Title = () => {
-  return <h1>SpaceX rockets</h1>;
+  return <StyledTitle>SpaceX rockets</StyledTitle>;
 };
 
 export default Title;

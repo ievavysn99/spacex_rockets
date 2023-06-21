@@ -8,9 +8,9 @@ interface TableRowProps {
 const TableRow: React.FC<TableRowProps> = ({ rocket }) => {
   if (!rocket) {
     return (
-      <tr>
-        <td colSpan={5}>No rocket data available</td>
-      </tr>
+      <div>
+        <p>No rocket data available</p>
+      </div>
     );
   }
 
