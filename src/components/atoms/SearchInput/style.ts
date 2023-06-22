@@ -14,6 +14,11 @@ export const StyledInput = styled.input`
   background-color: transparent;
   border: none;
   font-size: 16px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const StyledFAIcon = styled(FontAwesomeIcon)`

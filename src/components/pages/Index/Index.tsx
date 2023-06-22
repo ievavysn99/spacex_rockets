@@ -4,6 +4,7 @@ import Table from '../../molecules/Table';
 import { API } from '../../../shared/api';
 import { IRocket } from '../../../shared/api/types';
 import { StyledBody, StyledSection } from './style';
+import EmptyTableRow from '../../atoms/EmptyTableRow';
 
 const Index = () => {
   const [searchValue, setSearchValue] = useState<string>('');
@@ -25,16 +26,16 @@ const Index = () => {
   }, []);
 
   const handleSearchChange = (value: string) => {
-    if (typeof value === 'string') {
-      setSearchValue(value);
-
-      console.log(value);
-      // Filter the rockets based on the search value
-      const filteredData = fetchedRockets.filter((rocket) =>
-        rocket.rocket_name.toLowerCase().includes(value.toLowerCase())
-      );
-      setFilteredRockets(filteredData);
-    }
+    setSearchValue(value);
+    const filteredData = fetchedRockets.filter(
+      (rocket) =>
+        rocket.rocket_name.toLowerCase().includes(value.toLowerCase()) ||
+        String(rocket.diameter.meters).includes(value.toLowerCase()) ||
+        String(rocket.height.meters).includes(value.toLowerCase()) ||
+        String(rocket.mass.kg).includes(value.toLowerCase()) ||
+        String(rocket.cost_per_launch).includes(value.toLowerCase())
+    );
+    setFilteredRockets(filteredData);
   };
 
   return (
@@ -45,7 +46,11 @@ const Index = () => {
           searchValue={searchValue}
           onSearchChange={handleSearchChange}
         />
-        <Table rockets={filteredRockets} />
+        {filteredRockets.length === 0 ? (
+          <EmptyTableRow></EmptyTableRow>
+        ) : (
+          <Table rockets={filteredRockets} />
+        )}
       </StyledSection>
     </StyledBody>
   );

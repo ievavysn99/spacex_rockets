@@ -9,7 +9,6 @@ export const StyledRow = styled.div`
   color: #676c7e;
   font-size: 14px;
   font-weight: 400px;
-  min-width: fit-content;
 
   div {
     padding: 18px;

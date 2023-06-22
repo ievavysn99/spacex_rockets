@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 export const StyledBody = styled.div`
-  background-color: #e5e5e5;
+  background-color: #f5f5f6;
   min-height: 100vh;
 `;
 
