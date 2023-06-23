@@ -6,8 +6,7 @@ export const StyledHeading = styled.div`
   color: #676c7e;
   font-size: 14px;
   font-weight: 500;
-  padding-bottom: 10px;
-  padding-left: 17px;
+  padding: 0 0 10px 17px;
   align-items: center;
   gap: 20px;
 `;
